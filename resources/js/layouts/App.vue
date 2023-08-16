@@ -14,6 +14,9 @@
                     <li class="nav-item">
                         <router-link class="nav-link active" :to=" { name: 'dashboard' } "  v-if="$store.getters.getToken != 0 ">Dashboard</router-link>
                     </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link active" to="/dynamic-form"  v-if="$store.getters.getToken != 0 ">Dynamic form</router-link>
+                    </li>
                 </ul>
             </div>
         </div>
