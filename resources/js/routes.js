@@ -4,6 +4,7 @@ import login from './pages/login.vue';
 import register from './pages/register.vue';
 import dashboard from './pages/dashboard.vue';
 import store from './store/index.js';
+import dynamic from './pages/dynamic.vue'
 
 
 const routes = [
@@ -36,6 +37,14 @@ const routes = [
         name: 'dashboard',
         path: '/dashboard',
         component: dashboard,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        name: 'dynamic',
+        path: '/dynamic-form',
+        component: dynamic,
         meta: {
             requiresAuth: true
         }
