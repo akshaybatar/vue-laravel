@@ -30,7 +30,9 @@ import { reactive } from 'vue';
 import { ref } from 'vue';
 import axios from 'axios';
 import { useRouter } from 'vue-router';
-import {useStore} from 'vuex';
+//import {useStore} from 'vuex';
+
+import { userStore } from '@/store/userstore.js'
 
 
 export default {
@@ -42,17 +44,17 @@ export default {
         let error = ref('');
         let msg = ref('');
         const router = useRouter();
-        const store = useStore();
+        const store = userStore();
         const login = async () => {
             try {
                 const res = await axios.post('/api/login', form);
                 if (res.data.status = "success") {
                     const token = res.data.data.token;
-                    store.dispatch('setToken',token);
                     msg.value = res.data.message;
-                    setTimeout(() => {
-                        router.push({ name: 'dashboard' });
-                    }, 1000);
+                    store.setToken(token);
+                    router.push({ name: 'dashboard' });
+                    // setTimeout(() => {
+                    // }, 1000);
                 } else {
                     error.value = res.data.message;
                 }

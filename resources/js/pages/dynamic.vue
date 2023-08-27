@@ -19,7 +19,7 @@
                             <button type="button" class="btn btn-danger btn-sm" @click="remove(index)">x</button>
                             <button type="button" class="btn btn-success btn-sm" @click="addRow">+</button>
                         </div>
-                    </div >
+                    </div>
 
                 </div>
                 <button type="button" class="btn btn-primary bt-md mt-2" @click="save">Save</button>
@@ -48,18 +48,14 @@ export default {
             }
 
         };
-        const save  = ()=>{
-         // calling server api
-         axios.post('/api/item',form).then(response=>{
+        const save = () => {
+            // calling server api
+            axios.post('/api/item', form).then(response => {
 
-            console.log(response);
-         })
+                console.log(response);
+            })
 
         }
-
-
-
-
 
         return {
             form,

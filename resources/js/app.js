@@ -3,9 +3,13 @@ import './bootstrap';
 import { createApp } from 'vue';
 import router from './routes.js';
 import App from './layouts/App.vue';
-import store from './store/index.js';
+//import store from './store/index.js';
+import { createPinia } from 'pinia'
 
-createApp(App).use(router).use(store).mount("#app")
+createApp(App).use(router).use(createPinia()).mount("#app")
+
+
+//createApp(App).use(router).use(store).mount("#app")  use for vuex
 
 /**
  * The following block of code may be used to automatically register your
