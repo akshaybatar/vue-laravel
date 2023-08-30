@@ -8,9 +8,28 @@ import dynamic from './pages/dynamic.vue';
 import { userStore } from './store/userStore.js';
 import HelloWorld from '@/pages/HelloWorld.vue';
 import NewComponent from './components/NewComponent.vue';
+import AugComponent from '@/components/AugComponent.vue'
+import Aug from '@/components/27Aug.vue'
+
 
 
 const routes = [
+    {
+        name: 'Aug',
+        path: '/aug-second',
+        component: Aug,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        name: 'AugComponent',
+        path: '/aug-component',
+        component: AugComponent,
+        meta: {
+            requiresAuth: true
+        }
+    },
     {
         name: 'NewComponent',
         path: '/new-component',
@@ -90,7 +109,7 @@ const router = createRouter({
 
 router.beforeEach((to, from) => {
     const store = userStore();
-    console.log(store.token);
+   // console.log(store.token);
     if (to.meta.requiresAuth && store.token == 0) {
         return { name: 'login' }
     }

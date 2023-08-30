@@ -14,7 +14,7 @@
     </div>
 </template>
 
-<script >
+<script>
 
 export default {
 
@@ -50,7 +50,7 @@ export default {
 
 
 <!-- use scoped for same page css -->
-<style>
+<style scoped>
 h1 {
 
     color: brown;

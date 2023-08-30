@@ -25,6 +25,12 @@
                     <li class="nav-item">
                         <router-link class="nav-link active" to="/new-component" v-if="token != 0">New Component</router-link>
                     </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link active" to="/aug-component" v-if="token != 0">27 Aug</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link active" to="/aug-second" v-if="token != 0">27 Aug 2nd</router-link>
+                    </li>
                 </ul>
             </div>
 

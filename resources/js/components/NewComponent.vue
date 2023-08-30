@@ -17,7 +17,7 @@
                 <button type="button" class="btn btn-primary mt-4" v-on:click="form()">Click Me</button><br> -->
                 {{ mkdata }}
                 <br>
-                <label for="java" class="form-label"  v-bind="mkdata">Java</label>
+                <label for="java" class="form-label" v-bind="mkdata">Java</label>
                 <input id="java" type="checkbox" value="a" class="form">
 
                 <br>
@@ -26,7 +26,7 @@
                 <br>
                 <label for="node" class="form-label">node</label>
                 <input type="checkbox" id="node" class="form-checkbox">
-
+                {{ hh() }}
 
 
             </div>
@@ -45,7 +45,7 @@ export default {
             email: '',
             password: '',
 
-            mkdata:[],
+            mkdata: [],
 
         }
     },
@@ -62,9 +62,16 @@ export default {
             console.log("values:", this.email, this.password);
 
         }
+        ,
+        hh: function () {
+
+
+            console.log('pkp');
+        }
 
 
     }
+
 }
 </script>
 
