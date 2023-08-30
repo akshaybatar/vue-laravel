@@ -9,11 +9,28 @@ import { userStore } from './store/userStore.js';
 import HelloWorld from '@/pages/HelloWorld.vue';
 import NewComponent from './components/NewComponent.vue';
 import AugComponent from '@/components/AugComponent.vue'
-import Aug from '@/components/27Aug.vue'
-
+import Aug from '@/components/27Aug.vue';
+import thirty from './components/30Aug.vue';
+import ComputedProperty from '@/components/ComputedProperty.vue';
 
 
 const routes = [
+    {
+        name: 'computed-property',
+        path: '/computed-property',
+        component: ComputedProperty,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        name: 'thirty',
+        path: '/aug-thirty',
+        component: thirty,
+        meta: {
+            requiresAuth: true
+        }
+    },
     {
         name: 'Aug',
         path: '/aug-second',

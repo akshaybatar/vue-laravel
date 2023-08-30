@@ -31,6 +31,12 @@
                     <li class="nav-item">
                         <router-link class="nav-link active" to="/aug-second" v-if="token != 0">27 Aug 2nd</router-link>
                     </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link active" :to="{name:'thirty'}" v-if="token != 0">30 Aug 2nd</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link active" :to="{name:'computed-property'}" v-if="token != 0">Computed Property</router-link>
+                    </li>
                 </ul>
             </div>
 
