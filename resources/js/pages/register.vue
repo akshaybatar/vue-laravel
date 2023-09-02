@@ -43,13 +43,16 @@ import { reactive } from 'vue';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import axios from 'axios';
-import { useStore } from 'vuex';
+//import { useStore } from 'vuex';
+import { userStore } from '@/store/userstore.js'
+
+
 export default {
 
     setup() {
         let error = ref('');
         let msg = ref('');
-        const store = useStore();
+        const store = userStore();
         const router = useRouter();
         let form = reactive({
             name: '',
@@ -64,7 +67,7 @@ export default {
                 const res = await axios.post('/api/register', form);
                 if (res.data.status = "success") {
                     const token = res.data.data.token;
-                    store.dispatch('setToken', token)
+                    store.setToken(token)
                     error.value = '';
                     msg.value = res.data.message;
                     setTimeout(() => {
