@@ -1,8 +1,8 @@
 <template>
     <div>
         <h1>{{ msg }}</h1>
-        <h1 :id="msg ">hell man</h1>
-        <a v-bind="obj">okokokokok</a><br/>
+        <h1 :id="msg">hell man</h1>
+        <a v-bind="obj">okokokokok</a><br />
         <a :[attribute]="url">mbnb</a><br />
         <button :disabled="isok" class="btn btn-primary">click me</button>
     </div>
@@ -10,17 +10,17 @@
 
 <script  setup>
 
-const isok='';
+const isok = '';
 const msg = "ok id worinf"
 
 const url = 'https://google.com'
-const attribute ='href'
-const obj={
+const attribute = 'href'
+const obj = {
 
-    id:'okokok',
+    id: 'okokok',
 
-    href:'ok.com',
-    class:'jjjj'
+    href: 'ok.com',
+    class: 'jjjj'
 }
 
 

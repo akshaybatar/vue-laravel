@@ -34,6 +34,8 @@ const fullname = computed({
 });
 setTimeout(() => {
     console.log("timeout");
+    // fname.value = "Akshit";
+    // lname.value = "chaudhary";
     fullname.value = "Arjun Chutiya";
 }, 2000);
 

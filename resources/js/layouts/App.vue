@@ -20,10 +20,12 @@
                             form</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link active" :to="{name: 'HelloWorld'}" v-if="token != 0">Hello World</router-link>
+                        <router-link class="nav-link active" :to="{ name: 'HelloWorld' }" v-if="token != 0">Hello
+                            World</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link active" to="/new-component" v-if="token != 0">New Component</router-link>
+                        <router-link class="nav-link active" to="/new-component" v-if="token != 0">New
+                            Component</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link active" to="/aug-component" v-if="token != 0">27 Aug</router-link>
@@ -32,10 +34,15 @@
                         <router-link class="nav-link active" to="/aug-second" v-if="token != 0">27 Aug 2nd</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link active" :to="{name:'thirty'}" v-if="token != 0">30 Aug 2nd</router-link>
+                        <router-link class="nav-link active" :to="{ name: 'thirty' }" v-if="token != 0">30 Aug
+                            2nd</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link active" :to="{name:'computed-property'}" v-if="token != 0">Computed Property</router-link>
+                        <router-link class="nav-link active" :to="{ name: 'computed-property' }" v-if="token != 0">Computed
+                            Property</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link active" to="/three-sep" v-if="token != 0">3 sep</router-link>
                     </li>
                 </ul>
             </div>

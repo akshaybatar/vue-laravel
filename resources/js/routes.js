@@ -12,9 +12,18 @@ import AugComponent from '@/components/AugComponent.vue'
 import Aug from '@/components/27Aug.vue';
 import thirty from './components/30Aug.vue';
 import ComputedProperty from '@/components/ComputedProperty.vue';
+import ThreeSep from './components/ThreeSep.vue';
 
 
 const routes = [
+    {
+        name: 'three-sep',
+        path: '/three-sep',
+        component: ThreeSep,
+        meta: {
+            requiresAuth: true
+        }
+    },
     {
         name: 'computed-property',
         path: '/computed-property',

@@ -1,11 +1,15 @@
 <template>
+     <mpp />
     <div>
         <h1>30 aug</h1>
         <h2>{{ fullname(101) }}</h2>
+
     </div>
 </template>
 <script setup>
 import { ref } from 'vue';
+import mpp from './mpp.vue'
+
 
 const fname = ref('Akshay');
 const lname = ref('Kumar');
