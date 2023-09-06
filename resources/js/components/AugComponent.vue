@@ -9,10 +9,8 @@
 </template>
 
 <script  setup>
-
 const isok = '';
 const msg = "ok id worinf"
-
 const url = 'https://google.com'
 const attribute = 'href'
 const obj = {
@@ -22,6 +20,5 @@ const obj = {
     href: 'ok.com',
     class: 'jjjj'
 }
-
 
 </script>

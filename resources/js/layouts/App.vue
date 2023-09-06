@@ -44,6 +44,12 @@
                     <li class="nav-item">
                         <router-link class="nav-link active" to="/three-sep" v-if="token != 0">3 sep</router-link>
                     </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link active" :to="{ name: 'four-sep' }" v-if="token !=0 ">4 sep</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link active" to="/four-sep-two" v-if="token !=0 ">4 sep-two</router-link>
+                    </li>
                 </ul>
             </div>
 

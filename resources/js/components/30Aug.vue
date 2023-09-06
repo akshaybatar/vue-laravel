@@ -1,5 +1,5 @@
 <template>
-     <mpp />
+    <mpp />
     <div>
         <h1>30 aug</h1>
         <h2>{{ fullname(101) }}</h2>

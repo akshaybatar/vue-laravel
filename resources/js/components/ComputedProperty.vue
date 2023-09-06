@@ -36,7 +36,7 @@ setTimeout(() => {
     console.log("timeout");
     // fname.value = "Akshit";
     // lname.value = "chaudhary";
-    fullname.value = "Arjun Chutiya";
+    fullname.value = "Akshit Chaudhary";
 }, 2000);
 
 

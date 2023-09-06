@@ -13,9 +13,27 @@ import Aug from '@/components/27Aug.vue';
 import thirty from './components/30Aug.vue';
 import ComputedProperty from '@/components/ComputedProperty.vue';
 import ThreeSep from './components/ThreeSep.vue';
+import FourSep from './components/FourSep.vue'
+import FourSepTwo from '@/components/FourSepTwo.vue';
 
 
 const routes = [
+    {
+        name: 'four-sep-two',
+        path: '/four-sep-two',
+        component: FourSepTwo,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        name: 'four-sep',
+        path: '/four-sep',
+        component: FourSep,
+        meta: {
+            requiresAuth: true
+        }
+    },
     {
         name: 'three-sep',
         path: '/three-sep',

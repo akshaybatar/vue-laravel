@@ -8,20 +8,20 @@
 </template>
 
 <script setup>
-import { reactive,ref } from 'vue'
+import { reactive, ref } from 'vue'
 const count = reactive({
-    count: {count:0},
-    user:[
-        "name",'akshay',
-        ]
+    count: { count: 0 },
+    user: [
+        "name", 'akshay',
+    ]
 });
 
 const a = ref(5);
 
-let b = {count:ref(9)};
+let b = { count: ref(9) };
 
-console.log("a",a);
-console.log("a value",a.value);
+console.log("a", a);
+console.log("a value", a.value);
 
 // setTimeout(() => {
 //     count.count.count++
